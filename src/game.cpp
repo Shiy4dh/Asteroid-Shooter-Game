@@ -417,12 +417,12 @@ void updateAndDrawGame()
 			if (asteroidIndex != -1)
 			{
 
-				std::cout << "Collision detected! " << asteroidIndex << '\n';
+				//std::cout << "Collision detected! " << asteroidIndex << '\n';
 				PlaySound(explosionSound);
 				asteroid[asteroidIndex].asteroidActive = false;
 				
 				score += 10;
-				std::cout << "score:" << score << '\n';
+				//std::cout << "score:" << score << '\n';
 				respawnAsteroids(asteroidIndex);							// respawn the asteroid after they get destroyed
 				for (int i{ 0 }; i < MAX_BULLET; i++)
 				{
