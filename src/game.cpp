@@ -214,7 +214,7 @@ void generateAsteroids()
 		asteroid[i].asteroidSprite = asteroidTexture;	// set texture
 		asteroid[i].asteroidPosition.x = GetRandomValue(-5, screenWidth - asteroid->asteroidSprite.width);
 		asteroid[i].asteroidPosition.y = GetRandomValue(-5, -1 );
-		std::cout << "asteroid posX:" << asteroid[i].asteroidPosition.x << "asteroid posY:" << asteroid[i].asteroidPosition.y << '\n';
+		//std::cout << "asteroid posX:" << asteroid[i].asteroidPosition.x << "asteroid posY:" << asteroid[i].asteroidPosition.y << '\n';
 		asteroid[i].asteroidSpeed = GetRandomValue(1, 8);
 		asteroid[i].asteroidActive = true;
 	}
